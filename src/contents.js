@@ -636,7 +636,6 @@ class Contents {
 		}
 
 		this.css("margin", "0");
-		this.css("boxSizing", "border-box");
 
 	}
 
@@ -655,7 +654,6 @@ class Contents {
 		// this.overflowY("hidden");
 		this.css("overflowY", "hidden");
 		this.css("margin", "0");
-		this.css("boxSizing", "border-box");
 		this.css("maxWidth", "inherit");
 
 		this.css(COLUMN_AXIS, "horizontal");
