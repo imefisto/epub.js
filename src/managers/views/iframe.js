@@ -147,20 +147,21 @@ class IframeView {
 				this.settings.layout.format(this.contents);
 
         setTimeout((function() {
-          // Expand the iframe to the full size of the content
-          this.expand();
 
-          // Listen for events that require an expansion of the iframe
-          this.addListeners();
+				  // Expand the iframe to the full size of the content
+				  this.expand();
 
-          if(show !== false) {
-            //this.q.enqueue(function(view){
-            // this.show();
-            //}, view);
-          }
-          // this.map = new Map(view, this.layout);
-          //this.hooks.show.trigger(view, this);
-          this.emit("rendered", this.section);
+				  // Listen for events that require an expansion of the iframe
+				  this.addListeners();
+
+				  if(show !== false) {
+				  	//this.q.enqueue(function(view){
+				  		// this.show();
+				  	//}, view);
+				  }
+				  // this.map = new Map(view, this.layout);
+				  //this.hooks.show.trigger(view, this);
+				  this.emit("rendered", this.section);
         }).bind(this), 0);
 
 			}.bind(this))
